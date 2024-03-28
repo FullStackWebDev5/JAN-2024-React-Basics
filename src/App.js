@@ -1,20 +1,10 @@
 
 import './App.css';
-import FirstSection from './components/FirstSection'
-import SecondSection from './components/SecondSection'
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-      <FirstSection />
-      <FirstSection />
-      <FirstSection />
-      <FirstSection />
-      <FirstSection />
-      <FirstSection />
-      <SecondSection />
-    </div>
+    <Portfolio />
   );
 }
 
@@ -48,12 +38,17 @@ export default App;
   - Uses Virtual DOM
 
   - Components: Simple UI pieces which return JSX
-    - Class-based components
-    - Function-based components
+    - Types
+      - Class-based components
+      - Function-based components
+    - Features
+      - Nested Components
+      - Re-used Components
   - JSX: JavaScript + XML
 
   // Setup
   - Download Nodejs (+ NPM: Node Package Manager)
   - CRA: create-react-app
+  - Create React App: npx create-react-app react-1
+  - Run React App: (Within react app) npm start
 */
-
