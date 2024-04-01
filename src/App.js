@@ -1,10 +1,10 @@
 
 import './App.css';
-import Portfolio from './components/Portfolio';
+import Component1 from './components/Component1';
 
 function App() {
   return (
-    <Portfolio />
+    <Component1 />
   );
 }
 
@@ -45,6 +45,13 @@ export default App;
       - Nested Components
       - Re-used Components
   - JSX: JavaScript + XML
+
+  - Two types of data a React component can have:
+    - Props: Properties (Data from Parent Component to Child Component)
+      - One way data-binding
+    - State: (Data private to a specific component)
+
+  - A component re-renders whenever any of the two values change: States or Props
 
   // Setup
   - Download Nodejs (+ NPM: Node Package Manager)
