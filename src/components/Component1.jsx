@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 function Component1() {
-  const [count, setCount] = useState(0)
-  const [fullName, setFullName] = useState('Diksha')
+  // const [count, setCount] = useState(0)
+  // const [fullName, setFullName] = useState('Diksha')
+  const [show, setShow] = useState(false)
 
   const styles = {
     container: {
@@ -18,23 +19,31 @@ function Component1() {
     }
   }
 
-  const increment = () => {
-    setCount(count + 1)
-  }
+  // const increment = () => {
+  //   setCount(count + 1)
+  // }
 
-  const changeName = () => {
-    setFullName('Sasidhar')
+  // const changeName = () => {
+  //   setFullName('Sasidhar')
+  // }
+
+  const showOrHide = () => {
+    setShow(!show)
   }
 
   return (
     <div style={styles.container}>
-      Likes: {count}
+      {/* Likes: {count}
       <div>
         <button style={styles.button} onClick={increment}>Increment</button>
-      </div>
-      {fullName}
+      </div> */}
+      {/* {fullName}
       <div>
         <button style={styles.button} onClick={changeName}>Change Name</button>
+      </div> */}
+      {show && 'React.js'}
+      <div>
+        <button style={styles.button} onClick={showOrHide}>{show ? 'Hide' : 'Show'}</button>
       </div>
     </div>
   )
